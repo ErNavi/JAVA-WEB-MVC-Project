@@ -1,0 +1,27 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+label.valid {
+	width: 24px;
+	height: 24px;
+	background: url(./../img/valid.png) center center no-repeat;
+	display:inline-block;
+	text-indent: -9999px;
+}
+
+label.error {
+	
+	font-weight: bold;
+	color: red;
+	padding: 2px 8px;
+	margin-top: 2px;
+}
+.controls .membershipLast .error{position: relative;top:43px !important }
+
+ .membership-radio .error{position: relative;top:16px !important;left:-470px}
+ 
+ .preview1{
+ margin-left: 20px;
+ border: 1px solid red;
+ }

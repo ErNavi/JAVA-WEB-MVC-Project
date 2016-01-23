@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+id="WebApp_ID" version="2.5">
+	<display-name>Survey</display-name>
+
+
+	<servlet>
+		<servlet-name>CompanyRegistrationController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.CompanyRegistrationController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmailListController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.EmailListController</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>SurveyDetailsController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.SurveyDetailsController</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.LoginController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>LogOutController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.LogOutController</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>ForgotPasswordController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.ForgotPasswordController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChooseTempletController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.ChooseTempletController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChooseTempletAjaxController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.ChooseTempletAjaxController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChooseEmailController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.ChooseEmailController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChooseEmailAjaxController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.ChooseEmailAjaxController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>SurveyDetailsRemoveController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.SurveyDetailsRemoveController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddQuestionController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.AddQuestionController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>QuestionRemoveController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.QuestionRemoveController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>StartUpController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.StartUpController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>OpenClientSurveyController</servlet-name>
+		<servlet-class>com.cardinalts.survey.controller.OpenClientSurveyController</servlet-class>
+	</servlet>
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>CompanyRegistrationController</servlet-name>
+		<url-pattern>/CompanyRegistrationController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmailListController</servlet-name>
+		<url-pattern>/EmailListController</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>SurveyDetailsController</servlet-name>
+		<url-pattern>/SurveyDetailsController</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/LoginController</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LogOutController</servlet-name>
+		<url-pattern>/LogOutController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ForgotPasswordController</servlet-name>
+		<url-pattern>/ForgotPasswordController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChooseTempletController</servlet-name>
+		<url-pattern>/ChooseTempletController</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ChooseTempletAjaxController</servlet-name>
+		<url-pattern>/ChooseTempletAjaxController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChooseEmailController</servlet-name>
+		<url-pattern>/ChooseEmailController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChooseEmailAjaxController</servlet-name>
+		<url-pattern>/ChooseEmailAjaxController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>SurveyDetailsRemoveController</servlet-name>
+		<url-pattern>/SurveyDetailsRemoveController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddQuestionController</servlet-name>
+		<url-pattern>/AddQuestionController</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>QuestionRemoveController</servlet-name>
+		<url-pattern>/QuestionRemoveController</url-pattern>
+	</servlet-mapping>
+	
+		<servlet-mapping>
+		<servlet-name>StartUpController</servlet-name>
+		<url-pattern>/StartUpController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>OpenClientSurveyController</servlet-name>
+		<url-pattern>/OpenClientSurveyController</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+
+	</welcome-file-list>
+</web-app>
